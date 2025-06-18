@@ -1,16 +1,8 @@
-<script setup></script>
+<script setup>
+import '../../style/baseCard.css';
+</script>
 <template>
   <div class="base-card">
     <slot></slot>
   </div>
 </template>
-<style scoped>
-.base-card {
-  border: 1px solid #eee;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px 0;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-</style>

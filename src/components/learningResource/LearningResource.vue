@@ -1,6 +1,6 @@
 <script setup>
 import { defineProps } from 'vue';
-import BaseCard from '../UI/BaseCard.vue';
+
 import '../../style/learningResource.css';
 const props = defineProps({
   resource: {
