@@ -1,5 +1,5 @@
 <script setup>
-import LearningResource from './components/learningResource/LearningResource.vue';
+import StoredResources from './components/learningResource/StoredResources.vue';
 import './style/app.css';
 const storedResources = [
   {
@@ -18,11 +18,7 @@ const storedResources = [
 </script>
 
 <template>
-  <ul>
-    <LearningResource
-      v-for="resource in storedResources"
-      :key="resource.id"
-      :resource="resource"
-    />
-  </ul>
+  <div>
+    <StoredResources :resources="storedResources" />
+  </div>
 </template>
