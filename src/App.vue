@@ -1,5 +1,6 @@
 <script setup>
 import StoredResources from './components/learningResource/StoredResources.vue';
+import TheHeader from './layouts/TheHeader.vue';
 import './style/app.css';
 const storedResources = [
   {
@@ -19,6 +20,7 @@ const storedResources = [
 
 <template>
   <div>
+    <TheHeader title="Learning Resources" />
     <StoredResources :resources="storedResources" />
   </div>
 </template>

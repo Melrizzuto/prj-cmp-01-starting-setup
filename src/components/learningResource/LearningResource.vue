@@ -1,6 +1,7 @@
 <script setup>
 import { defineProps } from 'vue';
-
+import BaseCard from '../UI/BaseCard.vue';
+import BaseButton from '../UI/BaseButton.vue';
 import '../../style/learningResource.css';
 const props = defineProps({
   resource: {
@@ -13,14 +14,14 @@ const props = defineProps({
 <template>
   <li>
     <BaseCard class="learning-resource">
-      <header>
-        <h3>{{ props.resource.title }}</h3>
-        <button>Delete</button>
-      </header>
-      <p>{{ props.resource.description }}</p>
-      <nav>
+      <div class="card-content">
+        <p>{{ props.resource.description }}</p>
         <a :href="props.resource.link" target="_blank">View Resource</a>
-      </nav>
+      </div>
+      <div class="card-actions">
+        <BaseButton variant="delete">Delete</BaseButton>
+        <BaseButton variant="save">Save</BaseButton>
+      </div>
     </BaseCard>
   </li>
 </template>
