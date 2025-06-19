@@ -2,6 +2,7 @@
 import { defineProps } from 'vue';
 import DeleteButton from './DeleteButton.vue';
 import SaveButton from './SaveButton.vue';
+import AddButton from './AddButton.vue';
 import '../../style/baseButton.css';
 
 const props = defineProps({
@@ -14,6 +15,7 @@ const props = defineProps({
 const componentsMap = {
   delete: DeleteButton,
   save: SaveButton,
+  add: AddButton,
 };
 </script>
 

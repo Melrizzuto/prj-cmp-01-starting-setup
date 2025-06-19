@@ -21,6 +21,7 @@ const props = defineProps({
       <div class="card-actions">
         <BaseButton variant="delete">Delete</BaseButton>
         <BaseButton variant="save">Save</BaseButton>
+        <BaseButton variant="add">Add</BaseButton>
       </div>
     </BaseCard>
   </li>
